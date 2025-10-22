@@ -28,29 +28,6 @@ This project includes:
 
 ---
 
-## 📂 Project Structure
-Profile-card/
-│
-├── index.html
-├── about.html
-├── contact.html
-├── README.md
-│
-└── assets/
-    ├── css/
-    │   ├── style.css
-    │   ├── about.css
-    │   └── contact.css
-    │
-    ├── js/
-    │   └── main.js
-    │
-    └── images/
-        └── profile.jpg
-
-
-
-
 ## 🧠 Lessons Learned
 - How to use semantic tags effectively  
 - Implementing responsive design with breakpoints  
@@ -82,3 +59,6 @@ start index.html
 Kelechi Kalu
 Frontend Developer | Passionate about building clean, accessible interfaces
 LinkedIn | Twitter | GitHub
+
+
+
