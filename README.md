@@ -53,7 +53,6 @@ cd Profile-card
 
 # Open in browser
 start index.html
-<img width="1349" height="854" alt="Profile card" src="./Profile card.png" />
 
 👩‍💻 Author
 Kelechi Kalu
