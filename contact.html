@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./contact.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+
+            <h2>Get in Touch</h2>
+            <p>I'd love to hear from you; Please fill out the form below</p>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" data-testid="test-contact-name" aria-describedby="test-contact-error-name" aria-live="polite"
+                        placeholder="Your full name">
+                    <p id="test-contact-error-name" data-testid="test-contact-error-name" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" data-testid="test-contact-email" aria-describedby="test-contact-error-email" aria-live="polite"
+                        placeholder="E.g you@example.com">
+                    <p id="test-contact-error-email" data-testid="test-contact-error-email" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="test-contact-error-subject" aria-live="polite"
+                        placeholder="what is your query about?">
+                    <p id="test-contact-error-subject" data-testid="test-contact-error-subject" class="error-message"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" data-testid="test-contact-message" aria-describedby="test-contact-error-message" aria-live="polite"
+                        placeholder="Your detailed message"></textarea>
+                    <p id="test-contact-error-message" data-testid="test-contact-error-message" class="error-message"></p>
+                </div>
+
+                <button type="submit" data-testid="test-contact-submit">Send Message</button>
+            </form>
+
+            <p data-testid="test-contact-success" aria-live="assertive" id="success-message" class="success-message" hidden>
+                ✅ Thank you! Your message has been sent.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Kelechi Kalu. All rights reserved.</p>
+
+            <ul class="footer-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kelechi-kalu-669b60369/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/KaluKayC"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
