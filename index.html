@@ -15,75 +15,116 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <article class="profile-card" data-testid="test-profile-card">
 
-        <div class="profile-header">
-            <!-- Avatar -->
-            <figure>
-                <img src="./sergey-antonov-xCcMVe4KXvY-unsplash.jpg" alt="Profile picture of Kelechi Kalu"
-                    class="profile-picture" data-testid="test-user-avatar" />
-            </figure>
-
-            <!-- Name and Bio -->
-            <div>
-                <header class="user-info">
-                    <h2 data-testid="test-user-name">Kelechi Kalu</h2>
-                    <p data-testid="test-user-bio">
-                        Highly motivated Junior Frontend Developer with a passion for clean code and efficient web
-                        architecture; Eager to apply foundational skills in HTML, CSS, and JavaScript to build
-                        robust, responsive interfaces.
-                    </p>
-
-                    <!-- Time -->
-                    <div class="time">
-                        <p data-testid="test-current-time">
-                            Current Time: <span id="time-value"></span> ms
-                        </p>
-                    </div>
-                </header>
-            </div>
-        </div>
-
-        <!-- Social Links -->
-        <nav class="social-links" data-testid="test-user-social-links">
-            <h3>Socials</h3>
-            <ul>
-                <li><a data-testid="test-user-social-github" href="#" target="_blank"
-                        rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a></li>
-                <li><a data-testid="test-user-social-linkedin" href="#" target="_blank"
-                        rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
-                <li><a data-testid="test-user-social-twitter" href="#" target="_blank"
-                        rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+    <Header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
+    </Header>
+    <main>
+        <article class="profile-card" data-testid="test-profile-card">
 
-        <!-- Hobbies -->
-        <section>
-            <h3>Hobbies</h3>
-            <ul>
-                <li>Reading</li>
-                <li>Coding</li>
-                <li>Travelling</li>
-            </ul>
-        </section>
+            <div class="profile-header">
+                <!-- Avatar -->
+                <figure>
+                    <img src="./assets/images/sergey-antonov-xCcMVe4KXvY-unsplash.jpg" alt="Profile picture of Kelechi Kalu"
+                        class="profile-picture" data-testid="test-user-avatar" />
+                </figure>
 
-        <!-- Dislikes -->
-        <section>
-            <h3>Dislikes</h3>
-            <ul>
-                <li>Insufficiency</li>
-                <li>Public Spaces</li>
-                <li>Debugging</li>
+                <!-- Name and Bio -->
+                <div>
+                    <header class="user-info">
+                        <h2 data-testid="test-user-name">Kelechi Kalu</h2>
+                        <p data-testid="test-user-bio">
+                            Highly motivated Junior Frontend Developer with a passion for clean code and efficient web
+                            architecture; Eager to apply foundational skills in HTML, CSS, and JavaScript to build
+                            robust, responsive interfaces.
+                        </p>
+
+                        <!-- Time -->
+                        <div class="time">
+                            <p data-testid="test-current-time">
+                                Current Time: <span id="time-value"></span> ms
+                            </p>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <nav class="social-links" data-testid="test-user-social-links">
+                <h3>Socials:</h3>
+                <ul>
+                    <li><a data-testid="test-user-social-github" href="https://github.com/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a></li>
+                    <li><a data-testid="test-user-social-linkedin"
+                            href="https://www.linkedin.com/in/kelechi-kalu-669b60369/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                    <li><a data-testid="test-user-social-twitter" href="https://x.com/KaluKayC" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hobbies -->
+            <section>
+                <h3>Hobbies:</h3>
+                <ul>
+                    <li>Reading</li>
+                    <li>Coding</li>
+                    <li>Travelling</li>
+                </ul>
+            </section>
+
+            <!-- Dislikes -->
+            <section>
+                <h3>Dislikes:</h3>
+                <ul>
+                    <li>Insufficiency</li>
+                    <li>Public Spaces</li>
+                    <li>Debugging</li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Kelechi Kalu. All rights reserved.</p>
+
+            <ul class="footer-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </section>
-    </article>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kelechi-kalu-669b60369/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/KaluKayC"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- JS FILE -->
-    <script src="./main.js"></script>
+    <script>
+        const timeValue = document.getElementById("time-value");
+
+        function updateTime() {
+            const now = Date.now();
+            timeValue.textContent = now;
+        }
+
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
 </body>
 
 </html>
